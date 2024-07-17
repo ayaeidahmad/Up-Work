@@ -1,0 +1,54 @@
+.Achiev {
+    width: 100%;
+    height: 607px;
+    background-image: url(./../../assets/Images/achiv.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+}
+.Achiev h2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+}
+.Achiev .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.Achiev .circle {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto auto; */
+}
+.Achiev .content1 {
+    width: 170px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 4px dotted hsla(0, 0%, 74.1%, .52);
+}
+.Achiev .number1 {
+    color: #000;
+    font-size: 40px;
+    font-weight: 600;
+}
+.Achiev .title1 {
+    color: #fff;
+    font-size: 30px;
+}
+/* .Achiev-image {
+    width: 100%;
+} */

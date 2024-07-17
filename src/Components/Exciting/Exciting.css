@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.exciting {
+    padding: 50px 0;
+}
+.exciting-title {
+    color: #5cb7fd;
+}
+.exciting button .joinus {
+    text-decoration: none;
+    color: #5cb7fd;
+}
+.exciting button {
+    background-color: #fff;
+    color: #5cb7fd;
+    border:1px solid  #5cb7fd;
+}
+.exciting button:hover {
+    background-color: #5cb7fd;
+    border:1px solid  #5cb7fd;
+    transition: 1s;
+}
+.exciting button:hover .joinus {
+    color: #fff;
+}
+.exciting .exciting-image {
+    text-align: end;
+}
+.exciting .company-image {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+}
+.exciting .company-image img {
+    width: 40%;
+}
+.exciting .joinusCompany {
+    display: none;
+}

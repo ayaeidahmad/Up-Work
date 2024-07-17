@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.company {
+    padding: 50px 0;
+}
+.company .body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.company .company-title {
+    text-align: center;
+    width: 700px;
+}
+.company .company-div-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.company .card {
+    border: none;
+}
+.company .company-image {
+    border-radius: 50%;
+    box-shadow: 1px 1px 7px 0 #292929;
+    width: 70%;  
+    height: 70%; 
+    transition: 1s;
+    cursor: pointer;
+}
+.company .company-img {
+    text-align: center;
+    width: 80%;
+    border-radius: 50%;
+}
+.company .company-image:hover {
+    transform: scale(1.2);
+    /* filter: ; */
+}
+.company .body .showMore2 {
+    margin-left: 18px;
+}
+.company .body .showMore3 {
+    margin-left: 35px;
+}
+.company .body .showMore4 {
+    margin-left: 10px;
+}
+.company .body .showMore1 , .company .body .showMore5 , .company .body .showMore6 {
+    text-align: center;
+}
+.company .body .showMore1 , .company .body .showMore2 ,.company .body .showMore3 , 
+.company .body .showMore4 ,.company .body .showMore5 ,.company .body .showMore6 {
+    text-decoration: none;
+    border: 1px solid #5cb7fd;
+    width: max-content;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: #5cb7fd;
+}
+.company .body .showMore1:hover , .company .body .showMore2:hover ,.company .body .showMore3:hover , 
+.company .body .showMore4:hover ,.company .body .showMore5:hover ,.company .body .showMore6:hover  {
+    color: #fff;
+    background-color: #5cb7fd;
+    transition-duration: 1s;
+}
+/* .company .company-image:hover {
+    transform: scale(1.2);
+    transition: 1.5s;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 1px 1px 12px 0 #2e2e2ee8;
+} */
+/* .company .company-image:hover .company-img {
+    overflow: hidden;
+} */
+.company .company-name {
+    padding-left: 25px;
+    padding-top: 10px;
+    /* font-size: 20px !important; */
+}
+.company .company-location {
+    font-weight:200;
+    margin-left: 20px;
+}
+/* .company .body {
+    display: none;
+}
+.company .card:hover .body{
+    display: block;
+    transition: 1s;
+    
+} */
+/* .company .body {
+    display: none;
+}
+.company .card.show .body {
+    display: block;
+} */
+/* @media (max-width:767px) {
+    .company .card {
+        width: 100% !important;
+    }
+    .company .col {
+        text-align: center;
+    }
+}
+@media (max-width:576px) {
+    .company .card {
+        width: 100% !important;
+    }
+    .company .col {
+        text-align: center;
+    }
+} */

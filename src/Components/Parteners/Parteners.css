@@ -1,0 +1,27 @@
+.Parteners .loop-slider .inner {
+    display: flex;
+    width: fit-content;
+    animation-name: loop;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-duration: 10s;
+}
+.Parteners .tag-list {
+    overflow: hidden;
+}
+.Parteners h2 {
+    text-align: center;
+}
+.Parteners img {
+    width: 300px;
+    height: 150px;
+}
+@keyframes loop {
+        from {
+        transform: translateX(0);
+        }
+        to {
+        transform: translateX(-50%);
+        }
+    }

@@ -1,0 +1,83 @@
+.srvices-company .title-Section {
+    text-align: center;
+}
+.srvices-company .card1 , .srvices-company .card2 ,.srvices-company .card3 ,
+.srvices-company .card4 ,.srvices-company .card5 ,.srvices-company .card6 {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
+    background-color: #fff;
+    border-radius:24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+.srvices-company .col3 {
+    text-align: -webkit-right;
+}
+.srvices-company .col2 {
+    text-align: -webkit-center;
+}
+.srvices-company {
+    margin: 50px 0;
+}
+
+.srvices-company .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.srvices-company .card1:hover .card-inner , .srvices-company .card2:hover .card-inner ,.srvices-company .card3:hover .card-inner,
+.srvices-company .card4:hover .card-inner , .srvices-company .card5:hover .card-inner ,.srvices-company .card6:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.srvices-company .card-front , .srvices-company .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+/* .srvices-company .card-front {
+    background-color: #bbb;
+  color: black;
+} */
+.srvices-company .card-back {
+    background-color: #5cb7fd;
+  /* color: white; */
+  transform: rotateY(180deg);
+  box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
+    /* background-color: #fff; */
+    border-radius:24px;
+}
+
+
+
+
+
+
+/* .srvices-company .card1 , .srvices-company .card2 {
+    width: 500px;
+    padding: 20px;
+    border-radius:34px;
+    box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
+    background-color: #fff;
+}
+.srvices-company .card1 .title , .srvices-company .card2 .title {
+    font-weight: 600;
+    font-size: 30px;
+}
+.srvices-company .card1 .list , .srvices-company .card2 .list {
+    margin-bottom: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+.srvices-company .card1 .subtitle , .srvices-company .card2 .subtitle {
+    font-weight: 700;
+} */
