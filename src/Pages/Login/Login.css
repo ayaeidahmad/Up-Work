@@ -6,7 +6,7 @@
 .login {
     width: 100%;
     height: 100vh;
-    background-image: url(./../../../../public/circle.jpg);
+    background-image: url(./../../assets/Images/circle.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
