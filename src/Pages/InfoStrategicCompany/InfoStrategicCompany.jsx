@@ -28,6 +28,7 @@ const InfoStrategicCompany = () => {
             image1={image1}
         />
         <WhoAreWe 
+            page={"InfoStrategicCompany"}
             title={"Who Are We ?"} 
             about={"An Information Technology Solutions and Consulting Company, specialized in designing and implementing comprehensive information technology- solutions, including business analytics, system analytics, information management, big data processing, artificial intelligence-based solutions,media consultancy, blockchain implementation as well as developing and designing integrated web-based portals, ERP and CRM solutions and more…"} 
         />

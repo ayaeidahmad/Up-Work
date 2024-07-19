@@ -38,14 +38,14 @@ import 'aos/dist/aos.css'
 import { useEffect } from "react";
 const ServicesCompany = ({title , brand1 , brand2 ,brand3 ,brand4 ,brand5 ,brand6 ,b1 , b2 , b3 , b4 ,b5 ,b6 , l1 , l2 , l3 , l4 , l5 ,l6}) => {
     useEffect (() => {
-        Aos.init({duration : 2000})
+        Aos.init({duration : 2000 })
     }, [])
     return (
     <section className='srvices-company'>
     <h2 className='title-Section'>{title}</h2>
     <Container>
         <Row className='mb-5 mt-5'>
-            <Col lg={4} md={6} sm={12} data-aos="fade-up">
+            <Col lg={4} md={6} sm={12} data-aos="fade-down">
                 <div className="card1">
                     <div className="card-inner">
                         <div className="card-front">
@@ -58,7 +58,7 @@ const ServicesCompany = ({title , brand1 , brand2 ,brand3 ,brand4 ,brand5 ,brand
                     </div>
                 </div>
             </Col>
-            <Col className='col2' lg={4} md={6} sm={12} data-aos="fade-up">
+            <Col className='col2' lg={4} md={6} sm={12} data-aos="fade-down">
                 <div className="card2">
                     <div className="card-inner">
                             <div className="card-front">
@@ -71,7 +71,7 @@ const ServicesCompany = ({title , brand1 , brand2 ,brand3 ,brand4 ,brand5 ,brand
                         </div>
                 </div>
             </Col>
-            <Col className='col3' lg={4} md={6} sm={12} data-aos="fade-up">
+            <Col className='col3' lg={4} md={6} sm={12} data-aos="fade-down">
                 <div className="card3">
                     <div className="card-inner">
                             <div className="card-front">
@@ -86,7 +86,7 @@ const ServicesCompany = ({title , brand1 , brand2 ,brand3 ,brand4 ,brand5 ,brand
             </Col>
         </Row>
         <Row>
-            <Col lg={4} md={6} sm={12} data-aos="fade-up">
+            <Col lg={4} md={6} sm={12} data-aos="fade-down">
                 <div className="card4">
                     <div className="card-inner">
                             <div className="card-front">
@@ -99,7 +99,7 @@ const ServicesCompany = ({title , brand1 , brand2 ,brand3 ,brand4 ,brand5 ,brand
                         </div>
                 </div>
             </Col>
-            <Col className='col2' lg={4} md={6} sm={12} data-aos="fade-up">
+            <Col className='col2' lg={4} md={6} sm={12} data-aos="fade-down">
                 <div className="card5 ">
                     <div className="card-inner">
                             <div className="card-front">
@@ -112,7 +112,7 @@ const ServicesCompany = ({title , brand1 , brand2 ,brand3 ,brand4 ,brand5 ,brand
                         </div>
                 </div>
             </Col>
-            <Col className='col3' lg={4} md={6} sm={12} data-aos="fade-up">
+            <Col className='col3' lg={4} md={6} sm={12} data-aos="fade-down">
                 <div className="card6">
                     <div className="card-inner">
                             <div className="card-front">

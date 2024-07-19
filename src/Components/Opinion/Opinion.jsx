@@ -30,10 +30,11 @@ const Opinion = () => {
     ]
     return (
         <section className='opinion'>
-            <div className='d-flex justify-content-center w-100'>
-                <h1 className="opinion-title text-center pb-5 w-50">What Our Employers Who Visited Our Website and Got a Job Say ? </h1>
-            </div>
             <Container>
+            <div className=' pb-5'>
+                <h1 className="opinion-title ">Reviews</h1>
+                <p>What Our Employers Who Visited Our Website and Got a Job Say  </p>
+            </div>
             <Row>
             {opinions.map(index => {
                 return(

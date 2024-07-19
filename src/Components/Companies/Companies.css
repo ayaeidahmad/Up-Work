@@ -10,17 +10,20 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+}
+.company .card5 .body , .company .card6 .body {
+    text-align: center;
 }
 .company .company-title {
-    text-align: center;
-    width: 700px;
+    /* text-align: center; */
+    /* width: 700px; */
 }
 .company .company-div-title {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-bottom: 50px;
 }
 .company .card {
     border: none;
@@ -34,22 +37,43 @@
     cursor: pointer;
 }
 .company .company-img {
-    text-align: center;
+    /* text-align: center; */
     width: 80%;
     border-radius: 50%;
+}
+.company .card1 .company-img , .company .card4 .company-img  {
+    text-align: left;
+    width: 100%;
+}
+.company .card2 .company-img , .company .card5 .company-img{
+    text-align: center;
+    width: 100%;
+}
+.company .card3 .company-img , .company .card6 .company-img {
+    text-align: right;
+    width: 100%;
+}
+.company .card2 .body , .company .card3 .body {
+    text-align: center;
 }
 .company .company-image:hover {
     transform: scale(1.2);
     /* filter: ; */
 }
-.company .body .showMore2 {
-    margin-left: 18px;
+.company .body .showMore1 {
+margin-left: 3rem;
 }
-.company .body .showMore3 {
-    margin-left: 35px;
+.company .body .showMore2 {
+    margin-left: 7.3rem;
+}
+.company .body .showMore3  ,.company .body .showMore6 {
+    margin-left: 10.6rem;
 }
 .company .body .showMore4 {
-    margin-left: 10px;
+    margin-left: 3.8rem;
+}
+.company .body .showMore5 {
+    margin-left: 7rem;
 }
 .company .body .showMore1 , .company .body .showMore5 , .company .body .showMore6 {
     text-align: center;
@@ -80,9 +104,19 @@
     overflow: hidden;
 } */
 .company .company-name {
-    padding-left: 25px;
+    /* text-align: center; */
+    /* padding-left: 25px; */
     padding-top: 10px;
     /* font-size: 20px !important; */
+}
+.company .card3 .company-name  {
+    padding-left: 6.8rem;
+}
+.company .card4 .company-name  {
+    padding-left: 5rem;
+}
+.company .card6 .company-name  {
+    padding-left: 7rem;
 }
 .company .company-location {
     font-weight:200;

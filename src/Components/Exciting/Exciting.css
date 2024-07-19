@@ -6,6 +6,22 @@
 .exciting {
     padding: 50px 0;
 }
+.exciting-company {
+    height: 100vh;
+    padding: 0;
+}
+.exciting-company .column1 , .exciting-company .column2 {
+    margin: auto;
+}
+.exciting-company .row {
+    height: 100vh;
+}
+.exciting-company .company-image {
+    text-align: right;
+}
+.exciting-company .company-image img {
+    width: 200px;
+}
 .exciting-title {
     color: #5cb7fd;
 }

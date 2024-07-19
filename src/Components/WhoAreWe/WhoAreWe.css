@@ -3,8 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-.who {
+.who , .whoCompany {
     padding: 50px 0;
     background-color: #8b8b8b;
     color: #fff;
+}
+.whoCompany h2{
+    text-align: center;
 }

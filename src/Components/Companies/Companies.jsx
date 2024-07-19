@@ -57,19 +57,20 @@ const Companies = () => {
     ]
     return (
         <section className="company">
-        <div className="company-div-title">
-            <h1 className="company-title">Explore Employment Opportunities With Top company</h1>
-        </div>
         <Container>
+        <div className="company-div-title">
+            <h1 className="company-title">Companies</h1>
+            <p>Explore Employment Opportunities With Top company .</p>
+        </div>
         <Row>
         {all_companies.map((content , index ) => {
             return(
                 <Col  key={index} lg={4} md={6} sm={12}>
                     <Card className={`card${index+1} mb-4`} style={{ width: '22rem' }}>
-                        <div className="company-img mx-auto">
+                        <div className="company-img">
                         <Card.Img className="company-image mx-auto" variant="top" src={content.image} data-aos="fade-up" data-aos-duration="2000"/>
                         </div>
-                        <Card.Body className="body mx-auto">
+                        <Card.Body className="body">
                             <Card.Title className="company-name fs-3">{content.title}</Card.Title>
                             {/* <Card.Text> {index.discription}</Card.Text> */}
                             {/* <Card.Text className="company-location"> <FontAwesomeIcon icon={faLocationDot} /> {content.location}</Card.Text> */}

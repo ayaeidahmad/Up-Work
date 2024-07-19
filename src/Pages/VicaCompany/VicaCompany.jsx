@@ -28,6 +28,7 @@ const VicaCompany = () => {
             image1={image1}
         />
         <WhoAreWe 
+            page={"VicaCompany"}
             title={"Who Are We ?"} 
             about={"We seek to gain the superiority to qualify software staffs effectively ,and with high productivity and professionalism to enhance the programming skills in the programming labor market."} 
         />

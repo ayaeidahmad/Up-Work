@@ -22,12 +22,14 @@ const FocalCompany = () => {
         <section className="company1">
         <NavBar/>
         <Exciting 
+            page={"FocalCompany"}
             title={'Focal X Agency'} 
             about={'At focal X agency, we are working to build somthing different. Here you’ll have a group of creative people who specialize in: Branding, Digital Marketing, Web/App Development, Ui/Ux Content creation, Graphic design, Social media and More........ So you can take a tour in our website, OR just Press Start :)'} 
             button={'Join Us'} 
             image1={image1}
         />
         <WhoAreWe 
+            page={"FocalCompany"}
             title={"Who Are We ?"} 
             about={"We are a family of worldwide 75 specialists of storytellers and marketers , brand builders , and designers, in addition to programmers and developers."} 
         />

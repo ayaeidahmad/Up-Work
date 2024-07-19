@@ -27,7 +27,7 @@ const NavBar = () => {
     // }
     return (
             <Navbar expand="lg" className='navbar' >
-            <Container fluid>
+            <Container>
                 <Navbar.Brand href="#"><img className='navLogo' src={logo} alt="" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">

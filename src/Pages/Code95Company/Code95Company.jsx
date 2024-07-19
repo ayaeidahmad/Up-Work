@@ -26,6 +26,7 @@ const Code95Company = () => {
             about={'In Code95, we are on top of each and every technology to bring the top-notch solution that best fits your business needs. And now we managed to be a top-rated web development company in Egypt and the MENA region for over 16 years'}
             button={'Join Us'} image1={image1}/>
         <WhoAreWe 
+            page={"Code95Company"}
             title={"Who Are We ?"} 
             about={"We are a comprehensive web development company located in Egypt and Saudi Arabia, and serving businesses from all over the MENA region. Since 2007 we have been changing the digital landscape with our captivating yet functional websites and dependable digital solutions to connect businesses to their customers online."} 
         />

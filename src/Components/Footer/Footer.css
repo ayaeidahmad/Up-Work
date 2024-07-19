@@ -18,9 +18,10 @@ footer .list .item:hover {
 }
 footer .social {
     display: flex;
+    justify-content: space-between;
 }
 footer .social .icon{
-    margin-right: 20px;
+    /* margin-right: 20px; */
     width: 40px;
     height: 40px;
     color: #666666 ;

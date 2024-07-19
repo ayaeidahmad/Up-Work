@@ -28,6 +28,7 @@ const IdeaToLifeCompany = () => {
         image1={image1}
     />
     <WhoAreWe 
+        page={"IdeaToLifeCompany"}
         title={"Who Are We ?"} 
         about={"We strive to define industry benchmarks for quality and innovation, becoming the preferred choice for businesses in need of disruptive, state-of-the-art software solutions. Our intimate aim is to nurture enduring partnerships built on trust, collaboration, and shared success."} 
     />

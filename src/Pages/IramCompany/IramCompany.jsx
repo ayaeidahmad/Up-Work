@@ -26,6 +26,7 @@ const IramCompany = () => {
             about={'IRAM Company, a leading provider of Engineering and Trading solutions, was established in 2023. Committed to excellence, we leverage advanced technology and proven processes to deliver high-quality projects on time and within budget. Our diverse range of services encompasses engineering studies, commercial services, and cutting-edge technology.'}
             button={'Join Us'} image1={image1}/>
         <WhoAreWe 
+            page={"IramCompany"}
             title={"Who Are We ?"} 
             about={"We are a leading company in the Middle East and international markets, dedicated to achieving excellence in quality engineering work. With an unwavering commitment to innovation and continuous development, we overcome challenges to deliver remarkable projects. Our values of professionalism, credibility, and efficiency drive us to create inspiring environments that empower our clients and communities."} 
         />
