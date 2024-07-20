@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye , faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
+import loginImage from './../../assets/Images/login.jpg'
+import logo from './../../assets/Images/upwork1.png'
 const Login = () => {
 const [password, setPassword] = useState('')
 const [showPassword, setShowPassword] = useState(false)
@@ -23,14 +25,17 @@ setShowPassword(!showPassword)
 return (
     <section className="login">
         <Container>
-        <Row className="">
-            <Col lg={6} md={6} sm={12}>
-            <div className="login-text">
-                <h1>Welcome Back...</h1>
+        <Row className="rowLogin">
+            <Col className="colLogin" lg={6} md={6} sm={12}>
+            <div className="login-image">
+                <img src={loginImage} alt="loginImage" />
             </div>
             </Col>
-            <Col lg={6} md={6} sm={12}>
+            <Col className="colForm" lg={6} md={6} sm={12}>
             <Form className="form">
+                <img className="logo" src={logo} alt="" />
+                <h1>Welcome Back ...</h1>
+                <p>Login to access your Up Work account</p>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control className="login-input-email" type="email" placeholder="Enter email" required/>

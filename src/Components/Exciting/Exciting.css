@@ -57,3 +57,21 @@
 .exciting .joinusCompany {
     display: none;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+    .exciting p {
+        width: 500px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .exciting .company-image {
+        justify-content: center;
+    }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+    .exciting p {
+        font-size: 1rem !important;
+    }
+    .exciting .company-image {
+        justify-content: center;
+    }
+}

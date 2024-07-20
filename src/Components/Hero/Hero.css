@@ -28,3 +28,23 @@
 .hero img {
     filter: contrast(0.6);
 }
+@media (min-width: 576px) and (max-width: 767px) {
+    .col-sm-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .hero .caption h1 {
+        font-size: 2rem;
+    }
+    .hero .caption {
+        bottom: 13.5rem;
+    }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+    .hero .caption h1 {
+        font-size: 1.2rem;
+    }
+    .hero .caption {
+        bottom: 13.5rem;
+    }
+}

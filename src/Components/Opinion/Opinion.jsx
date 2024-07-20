@@ -38,7 +38,7 @@ const Opinion = () => {
             <Row>
             {opinions.map(index => {
                 return(
-                    <Col key={index.title} lg={6} md={6} sm={12} data-aos="fade-right">
+                    <Col key={index.title} lg={6} md={6} sm={12} >
                         <Card style={{ width: '100%', height: '200px' }}className="opinion-card mb-4">
                             <Card.Body>
                                 <Card.Title className='opinion-opinion'> {index.opinion} </Card.Title>

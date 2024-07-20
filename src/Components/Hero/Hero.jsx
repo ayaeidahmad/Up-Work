@@ -13,19 +13,19 @@ const Hero = () => {
         <div className="carousel-inner">
             <div className="carousel-item active">
                 <img src={image1} className="d-block w-100" alt="..."  />
-            <div className=" caption  d-none d-md-block">
+            <div className=" caption d-md-block">
                 <h1>Career Opportunities Await You</h1>
             </div>
             </div>
             <div className="carousel-item">
                 <img src={image2} className="d-block w-100" alt="..."/>
-            <div className="caption d-none d-md-block">
+            <div className="caption d-md-block">
                 <h1>Shape Your Future with Us</h1>
             </div>
             </div>
             <div className="carousel-item">
                 <img src={image3} className="d-block w-100" alt="..." />
-            <div className="caption d-none d-md-block">
+            <div className="caption d-md-block">
                 <h1>Start Your Success Story Here</h1>
             </div>
             </div>

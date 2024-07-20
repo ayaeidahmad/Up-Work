@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye , faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
-
+import SignUpImaage from './../../assets/Images/signup.jpg'
+import logo from './../../assets/Images/upwork1.png'
 const SignUp = () => {
 const [password, setPassword] = useState('')
 const [showPassword, setShowPassword] = useState(false)
@@ -38,15 +39,17 @@ setShowPassword2(!showPassword2)
 return (
     <section className="signup">
         <Container>
-        <Row className="">
-            <Col lg={6} md={6} sm={12}>
-            <div className="signup-text">
-                <h1>Create your acount</h1>
-                <p>it&apos;s just a few minutes and free</p>
+        <Row className="rowSingnUp">
+            <Col className="colImage" lg={6} md={6} sm={12}>
+            <div className="signUp-image">
+                <img src={SignUpImaage} alt="SignUpImaage" />
             </div>
             </Col>
             <Col lg={6} md={6} sm={12}>
             <Form className="form">
+                <img className="logo" src={logo} alt="logo" />
+                <h1>Create your acount</h1>
+                <p>it&apos;s just a few minutes and free</p>
             <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control className="signup-input" type="text" placeholder="Enter your name" required />

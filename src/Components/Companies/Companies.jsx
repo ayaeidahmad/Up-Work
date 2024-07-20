@@ -68,7 +68,7 @@ const Companies = () => {
                 <Col  key={index} lg={4} md={6} sm={12}>
                     <Card className={`card${index+1} mb-4`} style={{ width: '22rem' }}>
                         <div className="company-img">
-                        <Card.Img className="company-image mx-auto" variant="top" src={content.image} data-aos="fade-up" data-aos-duration="2000"/>
+                        <Card.Img className="company-image mx-auto" variant="top" src={content.image}/>
                         </div>
                         <Card.Body className="body">
                             <Card.Title className="company-name fs-3">{content.title}</Card.Title>

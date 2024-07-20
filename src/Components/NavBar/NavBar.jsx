@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 // import { faSun , faMoon } from '@fortawesome/free-solid-svg-icons'
 // import { useEffect, useState } from 'react';
 import './NavBar.css'
-import { NavLink } from 'react-bootstrap';
+import { NavLink, Row } from 'react-bootstrap';
 import logo from './../../assets/Images/upwork1.png'
 // import { Link } from 'react-router-dom';
 const NavBar = () => {
@@ -26,6 +26,7 @@ const NavBar = () => {
     //     setLightModed(!lightMode)
     // }
     return (
+            <Row className='navRow'> 
             <Navbar expand="lg" className='navbar' >
             <Container>
                 <Navbar.Brand href="#"><img className='navLogo' src={logo} alt="" /></Navbar.Brand>
@@ -45,6 +46,7 @@ const NavBar = () => {
                 </Navbar.Collapse>
             </Container>
             </Navbar>
+            </Row>
         );
 }
 

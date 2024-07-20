@@ -11,3 +11,8 @@
 .whoCompany h2{
     text-align: center;
 }
+@media (min-width: 320px) and (max-width: 575px) {
+    .who p , .whoCompany p {
+        font-size: 1rem !important;
+    }
+}

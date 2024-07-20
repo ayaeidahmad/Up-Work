@@ -6,25 +6,31 @@
 .login {
     width: 100%;
     height: 100vh;
-    background-image: url(./../../assets/Images/circle.jpg);
+    background-color: hsl(201deg 93% 77% / 24%);
+    /* background-image: url(./../../assets/Images/circle.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.login-text {
+/* .login-text {
     padding-top: 230px;
-}
-.login-text h1 {
+} */
+/* .login-text h1 {
     font-size: 55px;
-}
-.login .form {
+} */
+/* .login .form {
     padding-top: 120px;
-}
+} */
 
 .login button {
     background-color: #fff;
     color: #61c8ff;
     border:1px solid  #61c8ff;
+    margin-bottom: .75rem;
+    padding: 8px 17px;
 }
 .login button:hover {
     background-color: #61c8ff;
@@ -54,11 +60,83 @@
 .login input::placeholder {
     font-size: 14px;
 }
-@media (max-width :767px) {
-    .login-text {
-        padding-top: 50px;
+
+.login .logo {
+    width: 75px;
+    margin-left: -20px;
+}
+.login .form h1 {
+    font-weight: bold;
+}
+.login .form p {
+    font-size: .85rem;
+}
+.login .colLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.rowLogin {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 100px 30px;
+    box-shadow: 1px 1px 35px 2px hsl(201deg 93% 77%);
+}
+.login .login-image img {
+    width: 100%;
+}
+.login .colForm {
+    margin: auto;
+}
+.login .form-label {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.login .form-control {
+    padding: 1rem .75rem;
+}
+.login .form-text {
+    font-size: 1.2rem;
+}
+@media (min-width :1000px) and (max-width :1750px) {
+    .rowLogin {
+        padding: 30px;
     }
-    .login .form {
-        padding-top: 80px;
+}
+
+@media (max-width :767px) {
+    .login {
+        height: auto;
+    }
+    .login .rowLogin {
+        padding: 50px 30px;
+        margin: 30px 0;
+    }
+    .login .login-image img {
+        display: none;
+    }
+}
+@media (min-width :320px) and (max-width :400px) {
+    .login .rowLogin {
+        padding: 50px 10px;
+    }
+    .login .form-label {
+        margin-bottom: .75rem;
+        font-size: 1rem;
+    }
+    .login .form-control {
+        padding: .50rem;
+    }
+    .login button {
+        padding: 5px 10px;
+    }
+    .login .form-text {
+        font-size: 1rem;
+    }
+    .login .login-image img {
+        display: none;
     }
 }

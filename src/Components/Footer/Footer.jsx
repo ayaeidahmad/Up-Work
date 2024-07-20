@@ -18,7 +18,7 @@ const Footer = () => {
                         <img className='footerLogo' src={logo} alt="logo" />
                     </Col>
                     <Col lg={3} md={6} sm={12}>
-                        <ul className='list'>
+                        <ul className='list list1'>
                             <li className=' fs-3 fw-bold'>Further</li>
                             <li className='item'>Home</li>
                             <li className='item' onClick={scrollToSection}>About Company</li>

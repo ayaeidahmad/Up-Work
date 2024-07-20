@@ -35,9 +35,34 @@
 .opinion-opinion {
     padding-top: 20px;
 }
-
-@media (min-width :767px) and (max-width:991px) {
+@media (min-width: 768px) and (max-width: 991px) {
+    .opinion .opinion-card {
+        height: 270px !important;
+    }
     .opinion-name {
-        bottom: 10px;
+        bottom: 12px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .opinion .opinion-card {
+        height: 220px !important;
+    }
+}
+@media (min-width: 553px) and (max-width: 560px) {
+    .opinion .opinion-card {
+        height: 220px !important;
+    }
+}
+@media (min-width: 354px) and (max-width: 552px) {
+    .opinion .opinion-card {
+        height: 270px !important;
+    }
+    .opinion-name {
+        bottom: 15px;
+    }
+}
+@media (min-width: 320px) and (max-width: 353px) {
+    .opinion .opinion-card {
+        height: 320px !important;
     }
 }

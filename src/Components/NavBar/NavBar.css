@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+.navRow {
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0 !important;
+}
 nav.navbar {
     position: fixed;
     top: 0;
