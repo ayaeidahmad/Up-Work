@@ -33,7 +33,7 @@ return (
             </Col>
             <Col className="colForm" lg={6} md={6} sm={12}>
             <Form className="form">
-                <img className="logo" src={logo} alt="" />
+                <Link to="/landingPage"><img className="logo" src={logo} alt="logo" /></Link>
                 <h1>Welcome Back ...</h1>
                 <p>Login to access your Up Work account</p>
             <Form.Group className="mb-3" controlId="formBasicEmail">

@@ -39,6 +39,7 @@ nav.navbar {
     width: 80px;
     position: absolute;
     top: -5px;
+    margin-left: -25px;
 }
 
 /* @media (max-width : 991px) {

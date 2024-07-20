@@ -56,7 +56,27 @@
     /* background-color: #fff; */
     border-radius:24px;
 }
-
+@media (min-width: 576px) and (max-width: 767px) {
+    .srvices-company .col-sm-12 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .srvices-company .col3 {
+        width: 100%;
+        margin-top: 45px;
+        text-align: -webkit-center;
+    }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+    .srvices-company .column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .srvices-company .col1 , .srvices-company .col2 , .srvices-company .col4 {
+        margin-bottom: 40px;
+    }
+}
 
 
 

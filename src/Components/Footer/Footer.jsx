@@ -27,7 +27,7 @@ const Footer = () => {
                         </ul>
                     </Col>
                     <Col lg={3} md={6} sm={12}>
-                        <ul className='list'>
+                        <ul className='list list2'>
                             <li className=' fs-3 fw-bold'>Copanies</li>
                             <li className='item'>IRAM</li>
                             <li className='item'>Code95</li>

@@ -47,7 +47,7 @@ return (
             </Col>
             <Col lg={6} md={6} sm={12}>
             <Form className="form">
-                <img className="logo" src={logo} alt="logo" />
+                <Link to="/landingPage"><img className="logo" src={logo} alt="logo" /></Link>
                 <h1>Create your acount</h1>
                 <p>it&apos;s just a few minutes and free</p>
             <Form.Group className="mb-3" controlId="formBasicName">

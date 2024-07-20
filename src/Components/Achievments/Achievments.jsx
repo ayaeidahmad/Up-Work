@@ -7,7 +7,7 @@ const Achievments = ({number1 , title1 ,number2 , title2 ,number3 , title3 ,numb
         <Container>
             <Row>
                 <h2>Achievments</h2>
-                <Col lg={3} data-aos="zoom-in-down">
+                <Col lg={3} md={3} sm={12} data-aos="zoom-in-down">
                     <div className="app">
                         <div className="content1">
                             <div className="circle">
@@ -19,7 +19,7 @@ const Achievments = ({number1 , title1 ,number2 , title2 ,number3 , title3 ,numb
                         </div>
                     </div>
                 </Col>
-                <Col lg={3} data-aos="zoom-in-down">
+                <Col lg={3} md={3} sm={12} data-aos="zoom-in-down">
                     <div className="app">
                         <div className="content1">
                             <div className="circle">
@@ -31,7 +31,7 @@ const Achievments = ({number1 , title1 ,number2 , title2 ,number3 , title3 ,numb
                         </div>
                     </div>
                 </Col>
-                <Col lg={3} data-aos="zoom-in-down">
+                <Col lg={3} md={3} sm={12} data-aos="zoom-in-down">
                     <div className="app">
                         <div className="content1">
                             <div className="circle">
@@ -43,7 +43,7 @@ const Achievments = ({number1 , title1 ,number2 , title2 ,number3 , title3 ,numb
                         </div>
                     </div>
                 </Col>
-                <Col lg={3} data-aos="zoom-in-down">
+                <Col lg={3} md={3} sm={12} data-aos="zoom-in-down">
                     <div className="app">
                         <div className="content1">
                             <div className="circle">

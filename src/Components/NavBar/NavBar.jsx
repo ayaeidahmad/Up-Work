@@ -9,6 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import './NavBar.css'
 import { NavLink, Row } from 'react-bootstrap';
 import logo from './../../assets/Images/upwork1.png'
+import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 const NavBar = () => {
     // const [lightMode, setLightModed] = useState(false)
@@ -29,7 +30,7 @@ const NavBar = () => {
             <Row className='navRow'> 
             <Navbar expand="lg" className='navbar' >
             <Container>
-                <Navbar.Brand href="#"><img className='navLogo' src={logo} alt="" /></Navbar.Brand>
+                <Link to="/landingPage"><img className='navLogo' src={logo} alt="" /></Link>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                 <Nav

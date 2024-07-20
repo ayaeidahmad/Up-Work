@@ -49,6 +49,25 @@
     color: #fff;
     font-size: 30px;
 }
-/* .Achiev-image {
-    width: 100%;
-} */
+@media (min-width: 768px) and (max-width: 991px)  {
+    .Achiev .app .content2 {
+        text-align: center;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .Achiev .col-sm-12 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .Achiev .app {
+        margin-top: 20px;
+    }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+    .Achiev {
+        height: auto;
+    }
+    .Achiev .app {
+        margin-top: 20px;
+    }
+}

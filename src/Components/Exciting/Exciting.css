@@ -66,6 +66,13 @@
     .exciting .company-image {
         justify-content: center;
     }
+    .exciting-company .exciting p {
+        font-size: 1.2rem !important;
+        margin-bottom: 0;
+    }
+    .exciting-company .exciting {
+        padding: 50px 0 0 0;
+    }
 }
 @media (min-width: 320px) and (max-width: 575px) {
     .exciting p {
@@ -73,5 +80,11 @@
     }
     .exciting .company-image {
         justify-content: center;
+    }
+    .exciting-company .exciting {
+        padding: 50px 0 0 0;
+    }
+    .exciting-company .company-image img {
+        width: 150px;
     }
 }

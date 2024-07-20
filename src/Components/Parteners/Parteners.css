@@ -25,3 +25,8 @@
         transform: translateX(-50%);
         }
     }
+@media (min-width: 320px) and (max-width: 575px) {
+    .Parteners .loop-slider {
+        overflow: hidden;
+    }
+}
