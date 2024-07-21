@@ -65,7 +65,7 @@ const Companies = () => {
         <Row>
         {all_companies.map((content , index ) => {
             return(
-                <Col  key={index} lg={4} md={6} sm={12}>
+                <Col className={`col${index+1} `} key={index} lg={4} md={6} sm={12}>
                     <Card className={`card${index+1} mb-4`} style={{ width: '22rem' }}>
                         <div className="company-img">
                         <Card.Img className="company-image mx-auto" variant="top" src={content.image}/>

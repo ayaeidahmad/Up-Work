@@ -3,9 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-.company .col-lg-4  {
+/* .company .col-lg-4  {
     display: flex;
     justify-content: center;
+    align-items: center;
+} */
+.company .col3 , .company .col6 {
+    display: flex;
+    justify-content: end;
     align-items: center;
 }
 .company {
@@ -61,10 +66,10 @@
 .company .card2 .body , .company .card3 .body {
     text-align: center;
 }
-.company .company-image:hover {
+/* .company .company-image:hover {
     transform: scale(1.2);
     /* filter: ; */
-}
+
 .company .body .showMore1 {
 margin-left: 3rem;
 }
@@ -158,15 +163,38 @@ margin-left: 3rem;
     }
 } */
 @media (min-width: 992px) and (max-width: 1199px) {
-    .col-lg-4 {
-        flex: 0 0 auto;
-        width: 33.33333333%;
+    .company .col3 , .company .col6 {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .company .col1 , .company .col4 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .company .col2 , .company .col5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .company .body .showMore2 {
         margin-left: 5.5rem;
     }
+    .company .body .showMore5 {
+        margin-left: 5rem;
+    }
+    .company .body .showMore1 {
+        margin-left: 2.5rem;
+    }
+    .company .body .showMore4 {
+        margin-left: 2rem;
+    }
     .company .body .showMore3, .company .body .showMore6 {
         margin-left: 9rem;
+    }
+    .company .card4 .company-name {
+        padding-left: 3.3rem;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -177,20 +205,23 @@ margin-left: 3rem;
     .company .card3 .company-img , .company .card5 .company-img {
         text-align: left;
     }
-    .company .card4 .company-img , .company .card6 .company-img {
-        text-align: center;
+    .company .card4 .company-img , .company .card6 .company-img , .company .card2 .company-img  {
+        text-align: right;
     }
     .company .card1 .body {
         padding: 2rem;
     }
-    .company .body .showMore2 , .company .body .showMore4{
-        margin-left: 6.8rem;
+    .company .body .showMore2 {
+        margin-left: 9.8rem;
+    }
+    .company .body .showMore4{
+        margin-left: 9.5rem;
     }
     .company .body .showMore3 , .company .body .showMore5 {
         margin-left: 3.6rem;
     }
     .company .body .showMore6 {
-        margin-left: 7rem;
+        margin-left: 10.3rem;
     }
     .company .card3 .company-name {
         padding-left: 3.5rem;
@@ -198,54 +229,80 @@ margin-left: 3rem;
     }
     .company .card4 .company-name {
         text-align: center;
-        padding-left: 0;
+        padding-left: 6rem;
     }
     .company .card5 .company-name {
         text-align: left;
         padding-left: 1rem;
     }
-    .company .card6 .company-name {
+    /* .company .card6 .company-name {
         padding-left: 0;
+    } */
+    .company .card1 .company-img {
+        text-align: left;
+    }
+    .company .col1 , .company .col2 , .company .col4 , .company .col5 ,.company .col3 , .company .col6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .company .body .showMore1 {
+        margin-left: 2.5rem;
+    }
+    .company .card2 .company-name {
+        padding-left: 6rem;
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-    .company .col-sm-12 {
+    /* .company .col-sm-12 {
         flex: 0 0 auto;
         width: 50% !important;
-    }
+    } */
     .company .card2 .company-img , .company .card4 .company-img , .company .card6 .company-name{
         text-align: right;
     }
     .company .card3 .company-img , .company .card5 .company-img , .company .card5 .company-name {
         text-align: left;
     }
-    .company .card2 .company-name {
+    /* .company .card2 .company-name {
         padding-left: 5.5rem;
-    }
+    } */
     .company .card3 .company-name {
-        padding-right: 5rem;
-        padding-left: 0;
+        padding-right: 6rem;
+        /* padding-left: 0; */
     }
     .company .card4 .company-name {
-        padding-left: 7.5rem;
+        padding-left: 8rem;
     }
     .company .card6 .company-name {
         padding-left: 0;
     }
     .company .body .showMore2 {
-        margin-left: 6.7rem;
+        margin-left: 7rem;
     }
     .company .body .showMore3 {
-        margin-left: 1.3rem;
+        margin-left: 7.5rem;
     }
     .company .body .showMore4 {
-        margin-left: 6rem;
+        margin-left: 6.5rem;
     }
     .company .body .showMore5 {
-        margin-left: 1.5rem;
+        margin-left: .4rem;
     }
     .company .body .showMore6 {
-        margin-left: 6.6rem;
+        margin-left: 0rem;
+    }
+    .company .card1 .company-img ,  .company .card4 .company-img , .company .card3 .company-img,
+    .company .card5 .company-img , .company .card6 .company-img , .company .card2 .company-img {
+        text-align: center;
+    }
+    .company .col1 , .company .col2 , .company .col3 , .company .col4 , .company .col5 , .company .col6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .company .card1 .body , .company .card5 .body , .company .card6 .body {
+        align-items: center;
     }
 }
 @media (min-width: 320px) and (max-width: 575px) {
@@ -262,4 +319,13 @@ margin-left: 3rem;
     .company .card3 .company-name , .company .card4 .company-name , .company .card6 .company-name {
         padding-left: 0;
     }
+    .company .card1 .company-img ,  .company .card4 .company-img , .company .card3 .company-img,
+    .company .card5 .company-img , .company .card6 .company-img , .company .card2 .company-img {
+        text-align: center;
+    }
+    .company .col1 , .company .col2 , .company .col3 , .company .col4 , .company .col5 , .company .col6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
 }

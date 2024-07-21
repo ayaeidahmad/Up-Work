@@ -6,6 +6,11 @@
 footer {
     background-color: rgba(139, 139, 139 , 0.4);
 }
+.footer {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
 footer .list {
     list-style: none;
 }
@@ -19,6 +24,7 @@ footer .list .item:hover {
 footer .social {
     display: flex;
     justify-content: space-between;
+    width: 200px;
 }
 footer .social .icon{
     /* margin-right: 20px; */
@@ -65,9 +71,8 @@ footer .social .icon:hover {
     }
 }
 @media (min-width: 576px) and (max-width: 767px)  {
-    footer .col-sm-12 {
-        flex: 0 0 auto;
-        width: 50%;
+    .footer {
+        flex-wrap: wrap;
     }
     footer .list1 {
         padding-left: 0;
@@ -83,5 +88,8 @@ footer .social .icon:hover {
     }
     .footerLogo {
         margin-left: -35px;
+    }
+    .footer {
+        flex-direction: column;
     }
 }

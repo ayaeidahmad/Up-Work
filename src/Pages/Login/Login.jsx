@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import './Login.css'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye , faEyeSlash } from "@fortawesome/free-regular-svg-icons";
+import { faEye , faEyeSlash , faArrowAltCircleLeft } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
 import loginImage from './../../assets/Images/login.jpg'
 import logo from './../../assets/Images/upwork1.png'
@@ -26,6 +26,9 @@ return (
     <section className="login">
         <Container>
         <Row className="rowLogin">
+            <Link to="/landingPage">
+                <FontAwesomeIcon className="ArrowAltCircleLeft" icon={faArrowAltCircleLeft}/>
+            </Link>
             <Col className="colLogin" lg={6} md={6} sm={12}>
             <div className="login-image">
                 <img src={loginImage} alt="loginImage" />

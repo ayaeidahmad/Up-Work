@@ -11,13 +11,13 @@ const Footer = () => {
         sectionRef.current.scrollIntoView({behavior:'smooth'})
     }
     return (
-        <footer className="pt-3">
+        <footer className="pt-3 pb-3">
             <Container>
-                <Row>
-                    <Col lg={3} md={6} sm={12}> 
+                <div className='footer'>
+                    <div className='part1'> 
                         <img className='footerLogo' src={logo} alt="logo" />
-                    </Col>
-                    <Col lg={3} md={6} sm={12}>
+                    </div>
+                    <div className='part2'>
                         <ul className='list list1'>
                             <li className=' fs-3 fw-bold'>Further</li>
                             <li className='item'>Home</li>
@@ -25,8 +25,8 @@ const Footer = () => {
                             <li className='item'>Who Are We</li>
                             <li className='item'>Join Us</li>
                         </ul>
-                    </Col>
-                    <Col lg={3} md={6} sm={12}>
+                    </div>
+                    <div className='part3'>
                         <ul className='list list2'>
                             <li className=' fs-3 fw-bold'>Copanies</li>
                             <li className='item'>IRAM</li>
@@ -36,8 +36,8 @@ const Footer = () => {
                             <li className='item'>INFO Strategic</li>
                             <li className='item'>Idea To Life</li>
                         </ul>
-                    </Col>
-                    <Col lg={3} md={6} sm={12}>
+                    </div>
+                    <div className='part4'>
                         <p className='fs-3 fw-bold para-social'>Social</p>
                         <div className="social">
                             <a className="facebook icon">
@@ -53,8 +53,8 @@ const Footer = () => {
                                 <FontAwesomeIcon icon={faBehance} />
                             </a>
                         </div>
-                    </Col>
-                </Row>
+                    </div>
+                </div>
             </Container>
         </footer>
     )
