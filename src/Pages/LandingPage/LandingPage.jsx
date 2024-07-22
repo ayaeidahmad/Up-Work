@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Comment from '../../Components/Comment/Comment'
 import Companies from '../../Components/Companies/Companies'
 import Exciting from '../../Components/Exciting/Exciting'
@@ -11,6 +12,7 @@ import image1 from './../../assets/Images/exciting.svg'
 // import 'aos/dist/aos.css'
 // import { useEffect } from "react";
 import './LandingPage.css'
+import JobCard from '../../Components/JobCard/JobCard'
 const LandingPage = () => {
     // useEffect (() => {
     //     Aos.init({duration : 2000})
@@ -33,6 +35,7 @@ const LandingPage = () => {
             image1={image1}
         />
         <Opinion/>
+        <JobCard/>
         {/* <Comment/> */}
         <Footer/>
         </>

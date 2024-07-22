@@ -35,6 +35,19 @@
 .opinion-opinion {
     padding-top: 20px;
 }
+.opinion .Add-reviews {
+    border: 1px solid #5cb7fd;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: .375rem;
+    color: #5cb7fd;
+}
+.opinion .part1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     .opinion .opinion-card {
         height: 270px !important;
@@ -47,10 +60,20 @@
     .opinion .opinion-card {
         height: 220px !important;
     }
+    .opinion .part1 {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
 }
 @media (min-width: 553px) and (max-width: 560px) {
     .opinion .opinion-card {
         height: 220px !important;
+    }
+    .opinion .part1 {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
     }
 }
 @media (min-width: 354px) and (max-width: 552px) {
@@ -60,9 +83,19 @@
     .opinion-name {
         bottom: 15px;
     }
+    .opinion .part1 {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
 }
 @media (min-width: 320px) and (max-width: 353px) {
     .opinion .opinion-card {
         height: 320px !important;
+    }
+    .opinion .part1 {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
     }
 }

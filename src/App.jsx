@@ -13,7 +13,9 @@ import IdeaToLifeCompany from './Pages/IdeaToLifeCompany/IdeaToLifeCompany'
 
 function App() {
   const Routing = createBrowserRouter([
-      {path: "/" , element: <LandingPage/>  } ,
+      {path: "/" , element: <LandingPage/> , children : [
+        // {path: "/landingPage/popupAddReviews" , element : <}
+      ] } ,
       {path: "/landingPage" , element: <LandingPage/>  } ,
       {path:"/Company1" , element: <FocalCompany/> },
       {path:"/Company2" , element: <IramCompany/> },
