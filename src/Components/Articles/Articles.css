@@ -1,0 +1,22 @@
+.ArticleCard {
+    margin: 8px 4%;
+
+}
+
+.articles {
+    margin: 10px 7.5%;
+}
+
+.articles .article-title,
+.articles .article-para {
+    margin-left: 1%;
+}
+
+
+.articleButons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+
+}
+
