@@ -1,0 +1,22 @@
+.dash-navbar {
+    width: 100%;
+    /* background-color: #c9c4c4; */
+    padding: 10px 0;
+}
+.dash-navbar .dash {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dash-navbar .logo {
+    width: 100px;
+}
+.dash-navbar .company-name {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.dash-navbar .article , .dash-navbar .jobs , .dash-navbar .cvs {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}

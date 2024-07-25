@@ -1,0 +1,40 @@
+ .add {
+    border: 1px solid #5cb7fd;
+    padding: 10px 15px;
+    border-radius: 7px;
+    background-color: #fff;
+    color: #5cb7fd;
+    margin-top: 30px;
+}
+.buttonAdd {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+/* ................................. */
+.dash-navbar {
+    width: 100%;
+    background-color: #c9c4c4;
+    padding: 10px 0;
+}
+.dash-navbar .dash {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        /* background-color: #c9c4c4; */
+}
+.dash-navbar .logo {
+    width: 100px;
+}
+.dash-navbar .company-name {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.dash-navbar button#article , .dash-navbar #jobs , .dash-navbar #cvs {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}

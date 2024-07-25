@@ -41,6 +41,25 @@
 .jobCard strong {
     color: #5d5b5b;
 }
+.Applynone {
+    display: none;
+}
+.trashNone , .updateNone , .buttonsNone {
+    display: none;
+}
+.buttons .trash {
+    border: none;
+    color: red;
+    font-size: 20px;
+    background-color: #fff;
+}
+.buttons .update {
+    border: none;
+    color: #5d5b5b;
+    background-color: #fff;
+    font-size: 20px;
+    padding-right: 15px;
+}
 .jobCard .address {
     /* text-align: right !important; */
     padding: 10px 0 0 0;

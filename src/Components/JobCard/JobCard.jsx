@@ -1,42 +1,49 @@
 import { Container, Row , Col} from 'react-bootstrap'
 import Card from 'react-bootstrap/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot , faTrashAlt , faEdit } from '@fortawesome/free-solid-svg-icons';
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
 import './JobCard.css'
 import { useState } from 'react';
 import PopUpAddReviews from '../PopUpAddReviews/PopUpAddReviews';
-const JobCard = () => {
+import PopupDelete from '../PopupDelete/PopupDelete';
+const JobCard = ({page, onDelete }) => {
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+    const handleDelete = () => {
+        onDelete();
+        setIsPopupOpen(false);
+    };
     const Job_Details = [
         {
-            title : "Android and IOS developer",
-            jobRole : "software development", 
-            careerLevel : "senior", 
-            experienceNeeded : "more 5 years", 
-            jobType : "full time", 
-            keySkills : "android, database, xml", 
+            company_name : "Focal X Agency",
+            job_title : "software development", 
+            career_Level : "senior", 
+            experience_Needed : "more 5 years", 
+            Time : "full time", 
+            key_Skills : "android, database, xml", 
             address : "Syria - latakia", 
-            companyName : "Iram"
+            id: 1
         } , 
         {
-            title : "Android and IOS developer",
-            jobRole : "software development", 
-            careerLevel : "senior", 
-            experienceNeeded : "more 5 years", 
-            jobType : "full time", 
-            keySkills : "android, database, xml", 
+            company_name : "Focal X Agency",
+            job_title : "software development", 
+            career_Level : "senior", 
+            experience_Needed : "more 5 years", 
+            Time : "full time", 
+            key_Skills : "android, database, xml", 
             address : "Syria - latakia", 
-            companyName : "Iram"
+            id: 1
         } , 
         {
-            title : "Android and IOS developer",
-            jobRole : "software development", 
-            careerLevel : "senior", 
-            experienceNeeded : "more 5 years", 
-            jobType : "full time", 
-            keySkills : "android, database, xml", 
+            company_name : "Focal X Agency",
+            job_title : "software development", 
+            career_Level : "senior", 
+            experience_Needed : "more 5 years", 
+            Time : "full time", 
+            key_Skills : "android, database, xml", 
             address : "Syria - latakia", 
-            companyName : "Iram"
+            id: 1
         }
     ]
     const [showPopup, setShowPopup] = useState(false);
@@ -59,32 +66,33 @@ const JobCard = () => {
     return (
         <section className='jobCard'>
             <Container>
-                <div className='part1 pb-5'>
-                    <h1 className="jobCard-title">All job opportunities</h1>
-                    <p>Discover all the job opportunities provided by companies through our platform </p>
-                </div>
                 <Row className='jobRow'>
                     {Job_Details.map(index => {
                     return (
                             <Col className='jobCol' key={index} lg={4} md={6} sm={12} >
-                                <Card className="job-card mb-4">
-                                    {/* <FontAwesomeIcon className='EllipsisV' icon={faEllipsisV} /> */}
-                                    <h3 className='title'> {index.title} </h3>
+                                <Card className="job-card mb-4"  >
+                                    <h3 className='title'> {index.company_name} </h3>
                                     <div className='body'>
-                                        <p className='companyName'> <strong>Company Name </strong> {index.companyName}</p>
-                                        <p className='jobRole'> <strong>Job Role </strong> {index.jobRole}</p>
-                                        <p className='careerLevel'> <strong>Career Level </strong> {index.careerLevel}</p>
-                                        <p className='experienceNeeded'> <strong>Experience Needed </strong> {index.experienceNeeded}</p>
-                                        <p className='keySkills'> <strong>Key Skills </strong> {index.keySkills}</p>
-                                        <p className='jobType'> <strong>Job Type </strong> {index.jobType}</p>
-                                        {/* <p className='address'> <strong>Address:</strong> {index.address}</p> */}
+                                        <p className='companyName'> <strong>Job Title </strong> {index.job_title}</p>
+                                        <p className='jobRole'> <strong>Level </strong> {index.career_Level}</p>
+                                        <p className='careerLevel'> <strong>Experience </strong> {index.experience_Needed}</p>
+                                        <p className='experienceNeeded'> <strong>Time </strong> {index.Time}</p>
+                                        <p className='keySkills'> <strong>Skills </strong> {index.key_Skills}</p>
                                     </div>
                                     <div className='part3'>
                                         <p className='address'>
                                             <FontAwesomeIcon className='LocationDot' icon={faLocationDot} />
                                             {index.address}
                                         </p>
-                                        <button onClick={handleAddReviewsClick} className='Apply'>Apply Here</button>
+                                        <button  onClick={handleAddReviewsClick} className={page === "landingPage" ? "Apply" : "Applynone"}>Apply Here</button>
+                                        <div className={page === "landingPage" ? "buttonsNone" : "buttons"}>
+                                            <button className="update">
+                                                <FontAwesomeIcon icon={faEdit}/>
+                                            </button>
+                                            <button className="trash" onClick={() => setIsPopupOpen(true)}>
+                                                <FontAwesomeIcon icon={faTrashAlt}/>
+                                            </button>
+                                        </div>
                                     </div>
                                 </Card>
                             </Col>
@@ -102,6 +110,13 @@ const JobCard = () => {
                 rating={rating}
                 setRating={setRating}
             />
+            {isPopupOpen && (
+                <PopupDelete 
+                    message="Are you sure you want to confirm deletion" 
+                    onConfirm={handleDelete} 
+                    onCancel={() => setIsPopupOpen(false)} 
+                />
+            )}
             </Container>
         </section>
     )

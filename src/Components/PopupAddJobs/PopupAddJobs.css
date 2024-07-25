@@ -1,0 +1,78 @@
+.popupAdd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popupAdd form {
+    padding-top: 30px;
+}
+.popupBody {
+    position: relative;
+    background-color: white;
+    padding: 30px;
+    width: 500px;
+    height: 540px;
+    border-radius: 30px;
+}
+.popupAdd .name .text , .popupAdd .input4 .text , .popupAdd .input5 .text{
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    border: 1px solid #3a3a3a;
+}
+.popupAdd .input2 .text , .popupAdd .input3 .text {
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    border: 1px solid #3a3a3a;
+}
+.popupAdd .input2 , .popupAdd .input3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popupAdd .add {
+    border: 1px solid #5cb7fd;
+    background-color: #5cb7fd;
+    padding: 10px 15px;
+    border-radius: .375rem;
+    margin-top: 10px;
+    color: #000;
+    width: 100%;
+    text-align: center;
+}
+.popupAdd .name , .popupAdd .input2 , .popupAdd .input3 , .popupAdd .input4 , .popupAdd .input5 {
+    position: relative;
+}
+.popupAdd .name .lable , .popupAdd .input4 .lable , .popupAdd .input5 .lable{
+    position: absolute;
+    background-color: #fff;
+    font-size: 14px;
+    top: -10px;
+    left: 10px;
+    padding: 0 5px;
+}
+.popupAdd .input2 .lable1 , .popupAdd .input3 .lable1 {
+    position: absolute;
+    background-color: #fff;
+    font-size: 14px;
+    padding: 0 5px;
+    top: -10px;
+    left: 10px;
+}
+.popupAdd .input2 .lable2 , .popupAdd .input3 .lable2 {
+    position: absolute;
+    background-color: #fff;
+    font-size: 14px;
+    padding: 0 5px;
+    top: -10px;
+    right: 150px;
+}

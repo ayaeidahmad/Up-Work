@@ -50,6 +50,7 @@
     padding: 10px 15px;
     border-radius: .375rem;
     margin-top: 20px;
+    width: 100%;
 }
 .popup-inner .send:hover , .popup-inner-apply-job .send:hover {
     background-color: #fff;

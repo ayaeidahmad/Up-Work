@@ -13,6 +13,7 @@ import image1 from './../../assets/Images/exciting.svg'
 // import { useEffect } from "react";
 import './LandingPage.css'
 import JobCard from '../../Components/JobCard/JobCard'
+import { Container } from 'react-bootstrap'
 const LandingPage = () => {
     // useEffect (() => {
     //     Aos.init({duration : 2000})
@@ -35,7 +36,15 @@ const LandingPage = () => {
             image1={image1}
         />
         <Opinion/>
-        <JobCard/>
+        <section className='jobCard'>
+            <Container>
+                <div className='part1 pb-5'>
+                    <h1 className="jobCard-title">All job opportunities</h1>
+                    <p>Discover all the job opportunities provided by companies through our platform </p>
+                </div>
+                <JobCard page={"landingPage"} />
+            </Container>
+        </section>
         {/* <Comment/> */}
         <Footer/>
         </>
