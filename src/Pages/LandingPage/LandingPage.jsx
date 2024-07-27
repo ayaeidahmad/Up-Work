@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import Comment from '../../Components/Comment/Comment'
+// import { Link } from 'react-router-dom'
+// import Comment from '../../Components/Comment/Comment'
 import Companies from '../../Components/Companies/Companies'
 import Exciting from '../../Components/Exciting/Exciting'
 import Footer from '../../Components/Footer/Footer'
@@ -8,16 +8,16 @@ import NavBar from '../../Components/NavBar/NavBar'
 import Opinion from '../../Components/Opinion/Opinion'
 import WhoAreWe from '../../Components/WhoAreWe/WhoAreWe'
 import image1 from './../../assets/Images/exciting.svg'
-// import Aos from "aos";
-// import 'aos/dist/aos.css'
-// import { useEffect } from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 import './LandingPage.css'
 import JobCard from '../../Components/JobCard/JobCard'
 import { Container } from 'react-bootstrap'
 const LandingPage = () => {
-    // useEffect (() => {
-    //     Aos.init({duration : 2000})
-    // }, [])
+    useEffect (() => {
+        Aos.init({duration : 2000})
+    }, [])
     return (
         <>
         <NavBar/>

@@ -8,7 +8,7 @@ import { faEye , faEyeSlash , faArrowAltCircleLeft } from "@fortawesome/free-reg
 import { useState } from "react";
 import loginImage from './../../assets/Images/login.jpg'
 import logo from './../../assets/Images/upwork1.png'
-const Login = () => {
+const Login = ( ) => {
 const [password, setPassword] = useState('')
 const [showPassword, setShowPassword] = useState(false)
 const [icone, setIcone] = useState()
@@ -46,15 +46,16 @@ return (
             <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
                 <div className="conatainerPassword">
-                <Form.Control className="login-input-password" type={showPassword ? 'text' : 'password'} value={password} onChange={handlePasswordChange}  minLength={8} placeholder="Password" required min={8}/>
-                <div className="icon-password" onClick={toogleShowPassword}>
-                <FontAwesomeIcon onClick={changeIcone} icon={icone ? faEye : faEyeSlash} />
-                </div>
+                    <Form.Control className="login-input-password" type={showPassword ? 'text' : 'password'} value={password} onChange={handlePasswordChange}  minLength={8} placeholder="Password" required min={8}/>
+                    <div className="icon-password" onClick={toogleShowPassword}>
+                    <FontAwesomeIcon onClick={changeIcone} icon={icone ? faEye : faEyeSlash} />
+                    </div>
                 </div>
             </Form.Group>
-            <Button className="" type="submit">
-                Login
-            </Button>
+            <div className="part">
+                <Button className="" type="submit">Login</Button>
+                <Link to="/forgotpassword" className="forgotpassword">Forgot Password</Link>
+            </div>
             <Form.Text className="d-block">You don&apos;t have an acount ? <Link className="login-signup" to="/signup">SignUp Here</Link></Form.Text>
             </Form>
             </Col>

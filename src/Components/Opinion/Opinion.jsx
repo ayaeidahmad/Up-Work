@@ -64,7 +64,7 @@ const Opinion = () => {
             <Row>
             {opinions.map(index => {
                 return(
-                    <Col key={index.title} lg={6} md={6} sm={12} >
+                    <Col key={index.title} lg={6} md={6} sm={12} data-aos="zoom-in-down">
                         <Card style={{ width: '100%' }}className="opinion-card mb-4">
                             <Card.Body>
                                 <Card.Title className='opinion-opinion'> {index.opinion} </Card.Title>

@@ -1,15 +1,12 @@
 .jobCard {
-    /* background-color: #eeeeee71; */
     padding: 30px 0;
 }
 .jobCard .job-card {
-    /* position: relative; */
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    /* margin-bottom: 0 !important; */
 }
 .jobCard .body {
     display: flex;
@@ -60,10 +57,6 @@
     font-size: 20px;
     padding-right: 15px;
 }
-.jobCard .address {
-    /* text-align: right !important; */
-    padding: 10px 0 0 0;
-}
 .jobCard .address .LocationDot {
     padding-right: 7px;
 }
@@ -80,6 +73,3 @@
     border-radius: .375rem;
     color: #5cb7fd;
 }
-/* .jobCard .jobCard-title {
-    color: #000;
-} */

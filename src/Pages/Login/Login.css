@@ -117,6 +117,15 @@
 .login .form-text {
     font-size: 1.2rem;
 }
+.login .part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login .part .forgotpassword {
+    text-decoration: none;
+    color: #61c8ff;
+}
 @media (min-width :1000px) and (max-width :1750px) {
     .rowLogin {
         padding: 30px;

@@ -69,7 +69,7 @@ const JobCard = ({page, onDelete }) => {
                 <Row className='jobRow'>
                     {Job_Details.map(index => {
                     return (
-                            <Col className='jobCol' key={index} lg={4} md={6} sm={12} >
+                            <Col className='jobCol' key={index} lg={4} md={6} sm={12} data-aos="zoom-in-down">
                                 <Card className="job-card mb-4"  >
                                     <h3 className='title'> {index.company_name} </h3>
                                     <div className='body'>

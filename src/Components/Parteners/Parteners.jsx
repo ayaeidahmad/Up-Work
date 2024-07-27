@@ -24,6 +24,21 @@ const Parteners = ({img1, img2 ,img3 ,img4 , img5 }) => {
                             <div className="tag">
                                 <img src={img5} alt="" />
                             </div>
+                            <div className="tag">
+                                <img src={img1} alt="" />
+                            </div>
+                            <div className="tag">
+                                <img src={img2} alt="" />
+                            </div>
+                            <div className="tag">
+                                <img src={img3} alt="" />
+                            </div>
+                            <div className="tag">
+                                <img src={img4} alt="" />
+                            </div>
+                            <div className="tag">
+                                <img src={img5} alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>

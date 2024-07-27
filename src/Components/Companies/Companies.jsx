@@ -66,7 +66,7 @@ const Companies = () => {
         {all_companies.map((content , index ) => {
             return(
                 <Col className={`col${index+1} `} key={index} lg={4} md={6} sm={12}>
-                    <Card className={`card${index+1} mb-4`} style={{ width: '22rem' }}>
+                    <Card className={`card${index+1} mb-4`} style={{ width: '22rem' }} data-aos="zoom-in-down">
                         <div className="company-img">
                         <Card.Img className="company-image mx-auto" variant="top" src={content.image}/>
                         </div>

@@ -73,10 +73,10 @@ return (
             <Form.Group className="mb-3" controlId="formBasicConfirmPassword">
                 <Form.Label>Confirm Password</Form.Label>
                 <div className="containerConfirmPassword">
-                <Form.Control className="signup-input-confirm-password" type={showPassword2 ? 'text' : 'password'} value={password2} onChange={handlePasswordChange2} placeholder="Confirm Password" required/>
-                <div className="icon-password2" onClick={toogleShowPassword2}>
-                <FontAwesomeIcon onClick={changeIcone2} icon={icone2 ? faEye : faEyeSlash} />
-                </div>
+                    <Form.Control className="signup-input-confirm-password" type={showPassword2 ? 'text' : 'password'} value={password2} onChange={handlePasswordChange2} placeholder="Confirm Password" required/>
+                    <div className="icon-password2" onClick={toogleShowPassword2}>
+                    <FontAwesomeIcon onClick={changeIcone2} icon={icone2 ? faEye : faEyeSlash} />
+                    </div>
                 </div>
             </Form.Group>
             <Button className="" type="submit">
