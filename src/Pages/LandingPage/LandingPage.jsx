@@ -15,7 +15,7 @@ import './LandingPage.css'
 import JobCard from '../../Components/JobCard/JobCard'
 import { Container } from 'react-bootstrap'
 import ArticleCard from '../../Components/ArticleCard/ArticleCard'
-import img from './../../assets/Images/rejected.png'
+import img from './../../assets/Images/article.jpg'
 
 const LandingPage = () => {
 

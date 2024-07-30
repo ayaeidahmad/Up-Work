@@ -1,30 +1,26 @@
-import React from 'react'
+// import React from 'react'
 import "./ArticleCard.css"
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Col, Container, Row } from "react-bootstrap"
 import { Link } from 'react-router-dom';
-import { faLocationDot, faTrashAlt, faEdit } from '@fortawesome/free-solid-svg-icons';
+import { faTrashAlt, faEdit } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import NavBar2 from '../../../222/src/Components/NavBar2/NavBar2';
 const ArticleCard = ({ articles , Stetus}) => {
 
     return (
 
-        <section className='articles' style={{ padding: "99px 0" }} >
+        <section className='articles'>
             <Container>
-                <div className="addbutton" style={{ padding: " 0" }}>
-                    {/* <Link to="/AddArticle" className='add'>Add New Article</Link> */}
-                </div>
                 <Row>
                     {articles.map(index => {
                         return (
-                            <Col lg={4} md={6} sm={12} data-aos="zoom-in-down">
-                                <Card className='ArticleCard' style={{ width: '20wh', height: 'auto' }} >
-                                    <Card.Img variant="top" src={index.photo} />
+                            <Col className="colArticle" key={index} lg={4} md={6} sm={12} data-aos="zoom-in-down">
+                                <Card className="ArticleCard" style={{ width: '20wh', height: '100%' }} >
+                                    <Card.Img className="image" variant="top" src={index.photo} />
                                     <Card.Body>
-                                        <Card.Title>{index.title}</Card.Title>
-                                        <Card.Text>
+                                        <Card.Title className="title">{index.title}</Card.Title>
+                                        <Card.Text className="content">
                                             {index.body}
                                         </Card.Text>
                                         { Stetus &&
@@ -37,8 +33,6 @@ const ArticleCard = ({ articles , Stetus}) => {
                                             </button>
                                         </div>
                                         }
-
-
                                     </Card.Body>
                                 </Card>
                             </Col>

@@ -73,3 +73,6 @@
     border-radius: .375rem;
     color: #5cb7fd;
 }
+.jobCard .job-card {
+    margin-bottom: 1.5rem !important;
+}

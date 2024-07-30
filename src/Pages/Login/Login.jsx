@@ -54,7 +54,6 @@ return (
             </Form.Group>
             <div className="part">
                 <Button className="" type="submit">Login</Button>
-                <Link to="/forgotpassword" className="forgotpassword">Forgot Password</Link>
             </div>
             <Form.Text className="d-block">You don&apos;t have an acount ? <Link className="login-signup" to="/signup">SignUp Here</Link></Form.Text>
             </Form>
