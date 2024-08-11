@@ -1,5 +1,5 @@
 .jobCard {
-    padding: 30px 0;
+    padding: 70px 0;
 }
 .jobCard .job-card {
     background-color: #fff;
@@ -31,6 +31,8 @@
 }
 .jobCard .title {
     color: #5cb7fd;
+    font-size: 22px;
+    font-weight: 700;
 }
 .jobCard .job-card p {
     color: #858080;
@@ -46,7 +48,7 @@
 }
 .buttons .trash {
     border: none;
-    color: red;
+    color: #5d5b5b;
     font-size: 20px;
     background-color: #fff;
 }
@@ -73,6 +75,20 @@
     border-radius: .375rem;
     color: #5cb7fd;
 }
-.jobCard .job-card {
-    margin-bottom: 1.5rem !important;
+.addbutton {
+    width: 100%;
+    text-align: right;
+    margin: 30px 0;
+}
+.add {
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #5cb7fd;
+    color: #5cb7fd;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.add:hover {
+    background-color: #5cb7fd;
+    color: #000;
 }

@@ -1,30 +1,73 @@
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row , Col} from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot, faTrashAlt, faEdit } from '@fortawesome/free-solid-svg-icons';
-import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
-import './JobCard.css'
-import { useState } from 'react';
+import { faLocationDot , faTrashAlt , faEdit } from '@fortawesome/free-solid-svg-icons';
+import './JobCard.css';
+import { useEffect, useState } from 'react';
 import PopUpAddReviews from '../PopUpAddReviews/PopUpAddReviews';
 import PopupDelete from '../PopupDelete/PopupDelete';
-const JobCard = ({ page, onDelete, articles ,Stetus}) => {
-    const [isPopupOpen, setIsPopupOpen] = useState(false);
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
-    const handleDelete = () => {
-        onDelete();
-        setIsPopupOpen(false);
-    };
+const JobCard = ({ page , idCompany,userData}) => {
+
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const [jobToDelete, setJobToDelete] = useState(null);
+
+    const [token, settoken] = useState(localStorage.getItem('token'));
 
     const [showPopup, setShowPopup] = useState(false);
     const [review, setReview] = useState('');
     const [rating, setRating] = useState('');
     const [reviewsList, setReviewsList] = useState([]);
+    
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get(`http://127.0.0.1:8000/api/posts/${idCompany?`?company_id=${idCompany}`:''}`, {
+                    headers: {
+                        'Accept': 'application/json',
+                        'Authorization': `Bearer ${token}`,
+                    },
+                });
+                setData(response.data[0]);
+                setLoading(false);
+            } catch (error) {
+                setError(error.message);
+                setLoading(false);
+            }
+        };
+        fetchData();
+    }, [idCompany, token]);
+
+    const handleDelete = async () => {
+        try {
+            await axios.delete(`http://127.0.0.1:8000/api/post/${jobToDelete}`, {
+                headers: {
+                    'Accept': 'application/json',
+                    'Authorization': `Bearer ${token}`,
+                },
+            });
+            // قم بإزالة العنصر المحذوف من قائمة البيانات
+            setData(prevData => prevData.filter(job => job.id !== jobToDelete));
+            setIsPopupOpen(false);
+        } catch (error) {
+            console.error('Error deleting job: ', error);
+        }
+    };
+
     const handleAddReviewsClick = () => {
         setShowPopup(true);
     };
+
     const handleClosePopup = () => {
         setShowPopup(false);
     };
+
     const handleSendReview = () => {
         const newReview = { review, rating };
         setReviewsList([...reviewsList, newReview]);
@@ -32,66 +75,74 @@ const JobCard = ({ page, onDelete, articles ,Stetus}) => {
         setRating('');
         setShowPopup(false);
     };
+
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error}</p>;
+
     return (
-        <section className='jobCard'>
-            <Container>
-                <Row className='jobRow'>
-                    {articles.map(index => {
-                        return (
-                            <Col className='jobCol' key={index} lg={4} md={6} sm={12} data-aos="zoom-in-down">
-                                <Card className="job-card mb-4"  >
-                                    <h3 className='title'> {index.company_name} </h3>
+        <>
+
+            <section className='jobCard'>
+                <Container>
+                    <Row className='jobRow'>
+                        {data.map(job => (
+                            <Col className='jobCol' key={job.id} lg={4} md={6} sm={12}>
+                                <Card className="job-card mb-4">
+                                    <h3 className='title'>From {userData} Company</h3>
                                     <div className='body'>
-                                        <p className='companyName'> <strong>Job Title </strong> {index.job_title}</p>
-                                        <p className='jobRole'> <strong>Level </strong> {index.career_Level}</p>
-                                        <p className='careerLevel'> <strong>Experience </strong> {index.experience_Needed}</p>
-                                        <p className='experienceNeeded'> <strong>Time </strong> {index.Time}</p>
-                                        <p className='keySkills'> <strong>Skills </strong> {index.key_Skills}</p>
+                                        <p className='companyName'> <strong>Job Title </strong> {job.title}</p>
+                                        <p className='jobRole'> <strong>Level </strong> {job.job_role}</p>
+                                        <p className='careerLevel'> <strong>Experience </strong> {job.career_level}</p>
+                                        <p className='experienceNeeded'> <strong>Time </strong> {job.experience_needed}</p>
+                                        <p className='keySkills'> <strong>Skills </strong> {job.key_skills}</p>
+                                        <p className='job_type'> <strong>job_type </strong> {job.job_type}</p>
                                     </div>
                                     <div className='part3'>
                                         <p className='address'>
                                             <FontAwesomeIcon className='LocationDot' icon={faLocationDot} />
-                                            {index.address}
+                                            {job.address}
                                         </p>
-                                        {!Stetus && <button onClick={handleAddReviewsClick} className="Apply">Apply Here</button>}
-                                        {
-                                            Stetus &&
-                                            <div className="buttons">
-                                                <button className="update">
-                                                    <FontAwesomeIcon icon={faEdit} />
-                                                </button>
-                                                <button className="trash" onClick={() => setIsPopupOpen(true)}>
-                                                    <FontAwesomeIcon icon={faTrashAlt} />
-                                                </button>
-                                            </div>
-                                        }
+                                        <button onClick={handleAddReviewsClick} className={page === "landingPage" ? "Apply" : "Applynone"}>Apply Here</button>
+                                        <div className={page === "landingPage" ? "buttonsNone" : "buttons"}>
+                                            <Link to="/EditCardJob" className="update">
+                                                <FontAwesomeIcon icon={faEdit}/>
+                                            </Link>
+                                            <button 
+                                                className="trash" 
+                                                onClick={() => { 
+                                                    setJobToDelete(job.id); 
+                                                    setIsPopupOpen(true); 
+                                                }}
+                                            >
+                                                <FontAwesomeIcon icon={faTrashAlt}/>
+                                            </button>
+                                        </div>
                                     </div>
                                 </Card>
                             </Col>
-                        )
-                    }
-                    )}
-                </Row>
-                <PopUpAddReviews
-                    page={"jobCard"}
-                    show={showPopup}
-                    closePopup={handleClosePopup}
-                    sendReview={handleSendReview}
-                    review={review}
-                    setReview={setReview}
-                    rating={rating}
-                    setRating={setRating}
-                />
-                {isPopupOpen && (
-                    <PopupDelete
-                        message="Are you sure you want to confirm deletion"
-                        onConfirm={handleDelete}
-                        onCancel={() => setIsPopupOpen(false)}
+                        ))}
+                    </Row>
+                    <PopUpAddReviews
+                        page={"jobCard"}
+                        show={showPopup}
+                        closePopup={handleClosePopup}
+                        sendReview={handleSendReview}
+                        review={review}
+                        setReview={setReview}
+                        rating={rating}
+                        setRating={setRating}
                     />
-                )}
-            </Container>
-        </section>
-    )
+                    {isPopupOpen && (
+                        <PopupDelete 
+                            message="Are you sure you want to confirm deletion?" 
+                            onConfirm={handleDelete} 
+                            onCancel={() => setIsPopupOpen(false)} 
+                        />
+                    )}
+                </Container>
+            </section>
+        </>
+    );
 }
 
-export default JobCard
+export default JobCard;

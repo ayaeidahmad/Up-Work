@@ -1,3 +1,21 @@
+.articles .article-title,
+.articles .article-para {
+    margin-left: 1%;
+}
+
+.trash {
+    border: none;
+    color: #5d5b5b;
+    font-size: 20px;
+    background-color: #fff;
+}
+.update {
+    border: none;
+    color: #5d5b5b;
+    background-color: #fff;
+    font-size: 20px;
+    padding-right: 15px;
+}
 .articles .title {
     font-size: 1.7rem !important;
 }
@@ -6,6 +24,11 @@
 }
 .articles .colArticle {
     margin-bottom: 1.5rem !important;
+}
+.articles .button {
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
 .articles .ArticleCard {
     box-shadow: 1px 1px 15px 0px #aaa;

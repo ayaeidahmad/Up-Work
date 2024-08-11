@@ -17,6 +17,7 @@ import b3 from "./../../assets/Images/code.png"
 import b4 from "./../../assets/Images/partener.png"
 import b5 from "./../../assets/Images/motion.png"
 import b6 from "./../../assets/Images/design.jpeg"
+import JobCard from "../../Components/JobCard/JobCard"
 const IdeaToLifeCompany = () => {
     return (
         <section className="company2">
@@ -32,6 +33,7 @@ const IdeaToLifeCompany = () => {
         title={"Who Are We ?"} 
         about={"We strive to define industry benchmarks for quality and innovation, becoming the preferred choice for businesses in need of disruptive, state-of-the-art software solutions. Our intimate aim is to nurture enduring partnerships built on trust, collaboration, and shared success."} 
     />
+    <JobCard idCompany={6} page={'landingPage'} userData={'IdeaToLife'} />
     <ServicesCompany 
         title={"Our Services"} 
         brand1={"Design Thinking"} 
@@ -48,6 +50,7 @@ const IdeaToLifeCompany = () => {
         b6={b6}
         l1={"AIoT platform transforming municipalities and enabling better quality of life for everyday people."} 
     />
+    <ArticleCards idCompany={6} />
     <Achievments 
         number1={"100+"} title1={"Our Products"} 
         number2={"78+"} title2={"Our Employees"}

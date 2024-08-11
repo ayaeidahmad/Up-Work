@@ -2,7 +2,6 @@
 import './App.css'
 import {  RouterProvider, createBrowserRouter } from "react-router-dom"
 import LandingPage from './Pages/LandingPage/LandingPage'
-import Login from './Pages/Login/Login'
 import SignUp from './Pages/SignUp/SignUp'
 import FocalCompany from './Pages/FocalCompany/FocalCompany'
 import IramCompany from './Pages/IramCompany/IramCompany'
@@ -10,6 +9,7 @@ import Code95Company from './Pages/Code95Company/Code95Company'
 import VicaCompany from './Pages/VicaCompany/VicaCompany'
 import InfoStrategicCompany from './Pages/InfoStrategicCompany/InfoStrategicCompany'
 import IdeaToLifeCompany from './Pages/IdeaToLifeCompany/IdeaToLifeCompany'
+import Logein from './Pages/Logein/Logein'
 // import DashBordManager from './Pages/DashBordManager/DashBordManager'
 // import JobCard from './Components/JobCard/JobCard'
 // import ArticleDash from './Pages/ArticleDash/ArticleDash'
@@ -26,13 +26,9 @@ function App() {
       {path:"/Company4" , element: <VicaCompany/> },
       {path:"/Company5" , element: <InfoStrategicCompany/> },
       {path:"/Company6" , element: <IdeaToLifeCompany/> },
-      {path:"/login" , element: <Login/>} ,
+      {path:"/login" , element: <Logein/>} ,
       {path:"/signup" , element: <SignUp/> } ,
-      // {path: "/Dashboard" , element : <DashBordManager/> } ,
-      // {path : "/jobs" , element  :<JobsDash/>} ,
-      // {path : "/articles" , element  :<ArticleDash/>} ,
-      // {path : "/cvs" , element  :<CvsDash/>} ,
-      // {path : "/forgotpassword" , element  :<Login page={"forgotPassword"}/>} ,
+
   ])
   return (
     <RouterProvider router={Routing}>

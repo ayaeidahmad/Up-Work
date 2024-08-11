@@ -17,6 +17,8 @@ import b6 from "./../../assets/Images/design.jpeg"
 import ServicesCompany from "../../Components/ServicesCompany/ServicesCompany"
 import Achievments from "../../Components/Achievments/Achievments"
 import Parteners from "../../Components/Parteners/Parteners"
+import JobCard from "../../Components/JobCard/JobCard"
+import ArticleCards from "../../Components/ArticleCard/ArticleCard1"
 const FocalCompany = () => {
     return (
         <section className="company1">
@@ -33,6 +35,7 @@ const FocalCompany = () => {
             title={"Who Are We ?"} 
             about={"We are a family of worldwide 75 specialists of storytellers and marketers , brand builders , and designers, in addition to programmers and developers."} 
         />
+        <JobCard  idCompany={1} page={'landingPage'} userData={'Focal-x'} />
         <ServicesCompany 
             title={"Our Services"} 
             brand1={"Branding"} 
@@ -49,6 +52,7 @@ const FocalCompany = () => {
             b6={b6}
             l1={"Your Brand and Visual identity represents an intrinsic Value to your company."} 
         />
+        <ArticleCards idCompany={1}/>
         <Achievments 
             number1={"100+"} title1={"Our Products"} 
             number2={"78+"} title2={"Our Employees"}

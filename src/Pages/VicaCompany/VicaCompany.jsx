@@ -17,6 +17,7 @@ import b3 from "./../../assets/Images/code.png"
 import b4 from "./../../assets/Images/partener.png"
 import b5 from "./../../assets/Images/motion.png"
 import b6 from "./../../assets/Images/design.jpeg"
+import JobCard from "../../Components/JobCard/JobCard"
 const VicaCompany = () => {
     return (
         <section className="company2">
@@ -32,6 +33,7 @@ const VicaCompany = () => {
             title={"Who Are We ?"} 
             about={"We seek to gain the superiority to qualify software staffs effectively ,and with high productivity and professionalism to enhance the programming skills in the programming labor market."} 
         />
+        <JobCard idCompany={4} page={'landingPage'} userData={'Vica'} />
         <ServicesCompany 
             title={"Our Services"} 
             brand1={"Branding"} 
@@ -48,6 +50,7 @@ const VicaCompany = () => {
             b6={b6}
             l1={"Your Brand and Visual identity represents an intrinsic Value to your company."} 
         />
+        <ArticleCards idCompany={4} />
         <Achievments 
             number1={"100+"} title1={"Our Products"} 
             number2={"78+"} title2={"Our Employees"}

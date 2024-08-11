@@ -14,8 +14,8 @@ import { useEffect } from "react";
 import './LandingPage.css'
 import JobCard from '../../Components/JobCard/JobCard'
 import { Container } from 'react-bootstrap'
-import ArticleCard from '../../Components/ArticleCard/ArticleCard'
 import img from './../../assets/Images/article.jpg'
+import ArticleCards from '../../Components/ArticleCard/ArticleCard1'
 
 const LandingPage = () => {
 
@@ -93,8 +93,10 @@ const LandingPage = () => {
                     <h1 className="jobCard-title">All job opportunities</h1>
                     <p>Discover all the job opportunities provided by companies through our platform </p>
                 </div>
-                <JobCard Stetus={false} articles={Job_Details} />
+                {/* <JobCard Stetus={false} articles={Job_Details} /> */}
+                <JobCard page={'landingPage'} userData={'IdeaToLife'} />
             </Container>
+
             <Exciting
                 page={"landingPage"}
                 title={'Book your opportunity now !'}
@@ -102,12 +104,14 @@ const LandingPage = () => {
                 button={'Join Us'}
                 image1={image1}
             />
+            
             <Container>
                 <div className='part1 pb-5'>
                     <h1 className="jobCard-title">All Articles opportunities</h1>
                     <p>Discover all the Articles opportunities provided by companies through our platform </p>
                 </div>
-                <ArticleCard Stetus={false} articles={articles} />
+                {/* <ArticleCard Stetus={false} articles={articles} /> */}
+                <ArticleCards />
             </Container>
             <Opinion />
             <Footer />

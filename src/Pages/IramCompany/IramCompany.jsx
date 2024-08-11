@@ -17,6 +17,7 @@ import b3 from "./../../assets/Images/code.png"
 import b4 from "./../../assets/Images/partener.png"
 import b5 from "./../../assets/Images/motion.png"
 import b6 from "./../../assets/Images/design.jpeg"
+import JobCard from '../../Components/JobCard/JobCard'
 const IramCompany = () => {
     return (
         <section className="company2">
@@ -30,6 +31,7 @@ const IramCompany = () => {
             title={"Who Are We ?"} 
             about={"We are a leading company in the Middle East and international markets, dedicated to achieving excellence in quality engineering work. With an unwavering commitment to innovation and continuous development, we overcome challenges to deliver remarkable projects. Our values of professionalism, credibility, and efficiency drive us to create inspiring environments that empower our clients and communities."} 
         />
+        <JobCard idCompany={2} page={'landingPage'} userData={'Iram'} />
         <ServicesCompany 
             title={"Our Services"} 
             brand1={"Branding"}
@@ -46,6 +48,7 @@ const IramCompany = () => {
             b6={b6}
             l1={"Your Brand and Visual identity represents an intrinsic Value to your company."} 
         />
+        <ArticleCards idCompany={2}/>
         <Achievments 
             number1={"100+"} title1={"Our Products"} 
             number2={"78+"} title2={"Our Employees"}
