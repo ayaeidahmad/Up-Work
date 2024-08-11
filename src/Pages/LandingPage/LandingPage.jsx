@@ -78,6 +78,8 @@ const LandingPage = () => {
             id: 1
         }
     ]
+
+    const token = localStorage.getItem('token')
     return (
         <>
             <NavBar />
@@ -113,7 +115,7 @@ const LandingPage = () => {
                 {/* <ArticleCard Stetus={false} articles={articles} /> */}
                 <ArticleCards />
             </Container>
-            <Opinion />
+            {token && <Opinion />}
             <Footer />
         </>
     )
