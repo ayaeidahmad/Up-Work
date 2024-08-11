@@ -12,20 +12,14 @@ import logo from './../../assets/Images/upwork1.png'
 import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 const NavBar = () => {
-    // const [lightMode, setLightModed] = useState(false)
-    // useEffect(() => {
-    //     if (lightMode) {
-    //         document.body.classList.add('light-mode')
-    //         document.body.classList.remove('dark-mode')
-    //     }
-    //     else {
-    //         document.body.classList.add('light-mode')
-    //         document.body.classList.remove('dark-mode')
-    //     }
-    // } , [lightMode])
-    // const toggleMode = () => {
-    //     setLightModed(!lightMode)
-    // }
+
+    const token = localStorage.getItem('token')
+
+    function RemoveToken() {
+        localStorage.removeItem('token')
+        // window.location.reload()
+    }
+
     return (
             <Row className='navRow'> 
             <Navbar expand="lg" className='navbar' >
@@ -40,8 +34,12 @@ const NavBar = () => {
                 >
                 </Nav>
                 <Form className="d-flex">
+                    {!token ? <div>
                     <Button className='nav-btn navlogin me-2'><NavLink className='navlink' href="/Login">Login</NavLink></Button>
                     <Button className='nav-btn navsignup me-2'><NavLink className='navlink' href="/signup">Sign up</NavLink></Button>
+                    </div>:<div>
+                    <Button className='nav-btn navlogin me-2'><NavLink className='navlink' href="/" onClick={RemoveToken}>LogOut</NavLink></Button>
+                    </div>}
                     {/* <Link className='sun-moon pt-1' onClick={toggleMode}> <FontAwesomeIcon icon={lightMode ? faMoon : faSun } className='nav-icon fs-2' /> </Link> */}
                 </Form>
                 </Navbar.Collapse>

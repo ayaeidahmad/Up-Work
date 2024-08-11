@@ -18,6 +18,7 @@ import b4 from "./../../assets/Images/partener.png"
 import b5 from "./../../assets/Images/motion.png"
 import b6 from "./../../assets/Images/design.jpeg"
 import JobCard from '../../Components/JobCard/JobCard'
+import ArticleCards from '../../Components/ArticleCard/ArticleCard1'
 const IramCompany = () => {
     return (
         <section className="company2">

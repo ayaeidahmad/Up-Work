@@ -15,7 +15,7 @@ const JobCard = ({ page , idCompany,userData}) => {
     const [jobToDelete, setJobToDelete] = useState(null);
 
     const [token, settoken] = useState(localStorage.getItem('token'));
-
+    const [idCV,setidCV] = useState('')
     const [showPopup, setShowPopup] = useState(false);
     const [review, setReview] = useState('');
     const [rating, setRating] = useState('');
@@ -102,7 +102,7 @@ const JobCard = ({ page , idCompany,userData}) => {
                                             <FontAwesomeIcon className='LocationDot' icon={faLocationDot} />
                                             {job.address}
                                         </p>
-                                        <button onClick={handleAddReviewsClick} className={page === "landingPage" ? "Apply" : "Applynone"}>Apply Here</button>
+                                        <button onClick={ () => (handleAddReviewsClick(), setidCV(job.id))} className={page === "landingPage" ? "Apply" : "Applynone"}>Apply Here</button>
                                         <div className={page === "landingPage" ? "buttonsNone" : "buttons"}>
                                             <Link to="/EditCardJob" className="update">
                                                 <FontAwesomeIcon icon={faEdit}/>
