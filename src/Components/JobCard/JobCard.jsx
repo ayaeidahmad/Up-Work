@@ -61,8 +61,9 @@ const JobCard = ({ page , idCompany,userData}) => {
         }
     };
 
-    const handleAddReviewsClick = () => {
+    const handleAddReviewsClick = (id) => {
         setShowPopup(true);
+        localStorage.setItem('cvid' , id)
     };
 
     const handleClosePopup = () => {
@@ -103,7 +104,7 @@ const JobCard = ({ page , idCompany,userData}) => {
                                             <FontAwesomeIcon className='LocationDot' icon={faLocationDot} />
                                             {job.address}
                                         </p>
-                                        <button onClick={ () => (handleAddReviewsClick(), setidCV(job.id))} className={page === "landingPage" ? "Apply" : "Applynone"}>Apply Here</button>
+                                        <button onClick={ () => (handleAddReviewsClick(job.company_id), setidCV(job.id))} className={page === "landingPage" ? "Apply" : "Applynone"}>Apply Here</button>
                                         <div className={page === "landingPage" ? "buttonsNone" : "buttons"}>
                                             <Link to="/EditCardJob" className="update">
                                                 <FontAwesomeIcon icon={faEdit}/>

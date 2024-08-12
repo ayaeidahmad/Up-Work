@@ -36,6 +36,20 @@ const Opinion = () => {
         setCurrentImageIndex((currentImageIndex + 1) % images.length);
     };
 
+    const handleDeleteComment = async (id) => {
+        try {
+            await axios.delete(`http://127.0.0.1:8000/api/comment/${id}`, {
+                headers: {
+                    'Accept': 'application/json',
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`,
+                },
+            });
+            // تحديث قائمة التعليقات بعد الحذف
+            setData(data.filter(comment => comment.id !== id));
+        } catch (error) {
+            console.error("Failed to delete comment:", error);
+        }
+    };
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -54,23 +68,10 @@ const Opinion = () => {
             }
         };
         fetchData();
-    }, []);
+    }, [handleAddReviewsClick]);
 
     // دالة لحذف التعليق
-    const handleDeleteComment = async (id) => {
-        try {
-            await axios.delete(`http://127.0.0.1:8000/api/comment/${id}`, {
-                headers: {
-                    'Accept': 'application/json',
-                    'Authorization': `Bearer ${localStorage.getItem('token')}`,
-                },
-            });
-            // تحديث قائمة التعليقات بعد الحذف
-            setData(data.filter(comment => comment.id !== id));
-        } catch (error) {
-            console.error("Failed to delete comment:", error);
-        }
-    };
+    
 
 
     return (
