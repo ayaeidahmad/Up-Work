@@ -35,7 +35,7 @@ const InfoStrategicCompany = () => {
             title={"Who Are We ?"} 
             about={"An Information Technology Solutions and Consulting Company, specialized in designing and implementing comprehensive information technology- solutions, including business analytics, system analytics, information management, big data processing, artificial intelligence-based solutions,media consultancy, blockchain implementation as well as developing and designing integrated web-based portals, ERP and CRM solutions and more…"} 
         />
-        <JobCard idCompany={5} page={'landingPage'} userData={'InfoStrategic'} />
+        <JobCard idCompany={2} page={'landingPage'} userData={'InfoStrategic'} />
         <ServicesCompany 
             title={"Our Services"} 
             brand1={"Branding"} 
@@ -52,7 +52,7 @@ const InfoStrategicCompany = () => {
             b6={b6}
             l1={"Your Brand and Visual identity represents an intrinsic Value to your company."} 
         />
-        <ArticleCards idCompany={5} />
+        <ArticleCards idCompany={2} />
         <Achievments 
             number1={"100+"} title1={"Our Products"} 
             number2={"78+"} title2={"Our Employees"}

@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import PopupApplyHere from '../PopupApplyHere/PopupApplyHere';
 
-const JobCard = ({ page , idCompany,userData}) => {
+const JobCard = ({ page , idCompany}) => {
 
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [jobToDelete, setJobToDelete] = useState(null);
@@ -25,6 +25,8 @@ const JobCard = ({ page , idCompany,userData}) => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+
+    const userData = 'x'
 
     useEffect(() => {
         const fetchData = async () => {
@@ -90,7 +92,12 @@ const JobCard = ({ page , idCompany,userData}) => {
                         {data.map(job => (
                             <Col className='jobCol' key={job.id} lg={4} md={6} sm={12}>
                                 <Card className="job-card mb-4">
-                                    <h3 className='title'>From {userData} Company</h3>
+                                    {job.company_id == 1 ? <h3 className='title'>From Focal X Agency Company</h3> : <></>}
+                                    {job.company_id == 2 ? <h3 className='title'>From INFO Strategic Company</h3> : <></>}
+                                    {job.company_id == 3 ? <h3 className='title'>From IRAM Company</h3> : <></>}
+                                    {job.company_id == 4 ? <h3 className='title'>From Vica Company</h3> : <></>}
+                                    {job.company_id == 5 ? <h3 className='title'>From Code95 Company</h3> : <></>}
+                                    {job.company_id == 6 ? <h3 className='title'>From Idea To Life Company</h3> : <></>}
                                     <div className='body'>
                                         <p className='companyName'> <strong>Job Title </strong> {job.title}</p>
                                         <p className='jobRole'> <strong>Level </strong> {job.job_role}</p>

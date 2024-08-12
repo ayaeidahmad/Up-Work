@@ -33,7 +33,7 @@ const Code95Company = () => {
                 title={"Who Are We ?"}
                 about={"We are a comprehensive web development company located in Egypt and Saudi Arabia, and serving businesses from all over the MENA region. Since 2007 we have been changing the digital landscape with our captivating yet functional websites and dependable digital solutions to connect businesses to their customers online."}
             />
-            <JobCard idCompany={3} page={'landingPage'} userData={'Code95'} />
+            <JobCard idCompany={5} page={'landingPage'} userData={'Code95'} />
             <ServicesCompany
                 title={"Our Services"}
                 brand1={"Branding"}
@@ -50,7 +50,7 @@ const Code95Company = () => {
                 b6={b6}
                 l1={"Your Brand and Visual identity represents an intrinsic Value to your company."}
             />
-            <ArticleCards idCompany={3} />
+            <ArticleCards idCompany={5} />
             <Achievments
                 number1={"100+"} title1={"Our Products"}
                 number2={"78+"} title2={"Our Employees"}
