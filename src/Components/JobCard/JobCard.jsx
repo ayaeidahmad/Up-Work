@@ -8,6 +8,7 @@ import PopUpAddReviews from '../PopUpAddReviews/PopUpAddReviews';
 import PopupDelete from '../PopupDelete/PopupDelete';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import PopupApplyHere from '../PopupApplyHere/PopupApplyHere';
 
 const JobCard = ({ page , idCompany,userData}) => {
 
@@ -76,13 +77,13 @@ const JobCard = ({ page , idCompany,userData}) => {
         setShowPopup(false);
     };
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <p className='loading'></p>;
     if (error) return <p>Error: {error}</p>;
 
     return (
         <>
 
-            <section className='jobCard'>
+            <section className='jobCard' style={{padding: '70px 0 0 0'}}>
                 <Container>
                     <Row className='jobRow'>
                         {data.map(job => (
@@ -122,8 +123,7 @@ const JobCard = ({ page , idCompany,userData}) => {
                             </Col>
                         ))}
                     </Row>
-                    <PopUpAddReviews
-                        page={"jobCard"}
+                    <PopupApplyHere
                         show={showPopup}
                         closePopup={handleClosePopup}
                         sendReview={handleSendReview}

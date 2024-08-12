@@ -1,6 +1,6 @@
-.jobCard {
+/* .jobCard {
     padding: 70px 0;
-}
+} */
 .jobCard .job-card {
     background-color: #fff;
     padding: 20px;
@@ -91,4 +91,17 @@
 .add:hover {
     background-color: #5cb7fd;
     color: #000;
+}
+.loading {
+    margin: auto auto;
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #3498db; 
+    border-radius: 50%;
+    width: 60px; 
+    height: 60px; 
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

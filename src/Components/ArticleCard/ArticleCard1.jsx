@@ -71,12 +71,12 @@ const ArticleCards = ({ Stetus ,idCompany}) => {
         fetchData();
     }, []); // المصفوفة الفارغة لضمان أن الجلب يحدث مرة واحدة عند التحميل
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <p className='loading'></p>;
     if (error) return <p>Error: {error}</p>;
 
     return (
         <>
-            <section className='articles' style={{ padding: "70px 0" }}>
+            <section className='articles'>
                 <Container>
                     <Row>
                         {data.map(index => {

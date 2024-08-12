@@ -35,7 +35,7 @@ const FocalCompany = () => {
             title={"Who Are We ?"} 
             about={"We are a family of worldwide 75 specialists of storytellers and marketers , brand builders , and designers, in addition to programmers and developers."} 
         />
-        <JobCard  idCompany={1} page={'landingPage'} userData={'Focal-x'} />
+        <JobCard  idCompany={1} page={'companypage'} userData={'Focal-x'} />
         <ServicesCompany 
             title={"Our Services"} 
             brand1={"Branding"} 
