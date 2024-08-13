@@ -93,8 +93,9 @@ const Opinion = () => {
                                 <Card.Title className='opinion-opinion'> {index.comment} </Card.Title>
                                 <Card.Img className='opinion-image' src={img1} />
                                 <Card.Text className='opinion-name'>user</Card.Text>
-                                <Card.Text onClick={() => handleDeleteComment(index.id)}  className='opinion-name'>delete</Card.Text>
-                                
+                                <div className="del">
+                                    <Card.Text onClick={() => handleDeleteComment(index.id)}  className='opinion-name delete'>delete</Card.Text>    
+                                </div>                                
                             </Card.Body>
                         </Card>
                     </Col>

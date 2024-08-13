@@ -7,7 +7,7 @@
     position: absolute;
     bottom: 25px;
     left: 70px;
-    color: #575252;
+    color: hsl(0, 3%, 33%);
     font-weight: 500;
 }
 .opinion .card-img {
@@ -48,7 +48,25 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.opinion .delete {
+    border: 1px solid #5a5a5a;
+    padding: 0 5px;
+    border-radius: 5px;
+    color: red;
+    margin-bottom: -20px !important;
+    color: #5cb7fd;
+    cursor: pointer;
+}
+.opinion .delete:hover {
+    background-color: #5cb7fd;
+    color: #fff;
+}
+.del {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
 @media (min-width: 768px) and (max-width: 991px) {
     .opinion .opinion-card {
         height: 270px !important;
