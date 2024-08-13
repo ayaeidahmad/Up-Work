@@ -111,7 +111,7 @@ const JobCard = ({ page , idCompany}) => {
                                             <FontAwesomeIcon className='LocationDot' icon={faLocationDot} />
                                             {job.address}
                                         </p>
-                                        <button onClick={ () => (handleAddReviewsClick(job.company_id), setidCV(job.id))} className={page === "landingPage" ? "Apply" : "Applynone"}>Apply Here</button>
+                                        {token && <button onClick={ () => (handleAddReviewsClick(job.company_id), setidCV(job.id))} className={page === "landingPage" ? "Apply" : "Applynone"}>Apply Here</button>}
                                         <div className={page === "landingPage" ? "buttonsNone" : "buttons"}>
                                             <Link to="/EditCardJob" className="update">
                                                 <FontAwesomeIcon icon={faEdit}/>
